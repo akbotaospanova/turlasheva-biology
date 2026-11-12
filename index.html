@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Жасушаның құпия әлемі — А.М. Турлашева</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Lora:ital,wght@0,500;0,600;0,700;1,500&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#home"><span class="logo"><svg viewBox="0 0 40 40"><defs><radialGradient id="lg" cx=".35" cy=".35"><stop offset="0" stop-color="#ffd6e2"/><stop offset="1" stop-color="#e8799a"/></radialGradient></defs><ellipse cx="20" cy="20" rx="18" ry="15" fill="url(#lg)" opacity=".9"/><circle cx="17" cy="19" r="7" fill="#7a5bc7"/><circle cx="18.5" cy="17.5" r="2.4" fill="#3d2470"/><ellipse cx="29" cy="25" rx="4" ry="2" fill="#f08a4b" transform="rotate(-30 29 25)"/><circle cx="28" cy="13" r="1.8" fill="#d64f6b"/></svg></span><span><b>Жасушаның құпия әлемі</b><small>элективті курс · 9-сынып</small></span></a>
+  <button class="burger" aria-label="Мәзір" onclick="document.body.classList.toggle('menu-open')"><i></i><i></i><i></i></button>
+  <nav class="nav">
+    <a href="#home">Басты бет</a><a href="#program">Бағдарлама</a><a href="#lessons">Сабақтар</a><a href="#awards">Жетістіктер</a><a href="#author">Автор</a>
+  </nav>
+</header>
+
+<main id="homeView">
+  <section class="hero" id="home">
+    <div class="hero-bg"><span class="b1"></span><span class="b2"></span><span class="b3"></span></div>
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <div class="eyebrow"><span class="dot"></span>Авторлық бағдарлама</div>
+        <h1>Жасушаның<br><em>құпия әлемі</em></h1>
+        <p class="lead">9-сынып оқушыларына арналған биологиядан элективті курс: 34 сабақ, интерактивті 3D модельдер мен анимациялар, ойындар, тестілер мен шығармашылық тапсырмалар.</p>
+        <div class="hero-cta"><a class="btn primary" href="#lessons">Курсты бастау →</a><a class="btn ghost" href="#awards">Жетістіктер</a></div>
+        <div class="hero-stats">
+          <div><b>34</b><span>сабақ</span></div><div><b>34</b><span>3D анимация</span></div><div><b>70+</b><span>ойын мен тапсырма</span></div><div><b>140+</b><span>тест сұрағы</span></div>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <div class="arch"><img src="img/teacher.jpg" alt="Турлашева Алина Маратовна"></div>
+        <div class="ring"></div>
+        <div class="float f1"><b>13 жыл</b><span>еңбек өтілі</span></div>
+        <div class="float f2"><b>Педагог-зерттеуші</b><span>біліктілік санаты</span></div>
+        <div class="float f3"><b>Абай атындағы ҚазҰПУ</b><span>түлегі</span></div>
+        <div class="cell-badge" id="heroCell"></div>
+        <div class="namecard"><b>Турлашева Алина Маратовна</b><span>Биология пәнінің мұғалімі · №169 мектеп-лицей, Алматы</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="program">
+    <div class="wrap">
+      <div class="sec-head"><span class="kicker">Бағдарлама</span><h2>Курстың мақсаты мен міндеттері</h2></div>
+      <div class="prog-grid">
+        <div class="card goal"><h3>Мақсаты</h3><p id="pGoal"></p><div class="reviewer"><span>Пікір жазған:</span> <b id="pRev"></b></div></div>
+        <div class="card"><h3>Міндеттері</h3><ol id="pTasks" class="tasks"></ol></div>
+      </div>
+      <div class="pillars" id="pPrinc"></div>
+      <div class="card assess"><div><h3>Қалыптастырушы бағалау</h3><p>Баға, балл қойылмайды — мұғалім мен оқушы арасында үздіксіз кері байланыс. Оқушының қателесуге және оны түзетуге құқығы бар. Тарау соңында жиынтық бағалау жүргізіледі.</p></div><div class="chips" id="pAssess"></div></div>
+      <details class="card lit"><summary>Қолданылған әдебиеттер тізімі</summary><ol id="pLit"></ol></details>
+    </div>
+  </section>
+
+  <section class="sec alt" id="lessons">
+    <div class="wrap">
+      <div class="sec-head"><span class="kicker">Тақырыптық жоспар</span><h2>34 сабақ — 8 бөлім</h2><p>Әр сабақта: теория, 3D анимация-видео, тест, интерактивті ойындар және практикалық тапсырма.</p></div>
+      <div class="tools"><input id="search" type="search" placeholder="Тақырыпты іздеу…"><div class="progress-all"><span id="progTxt">0 / 34 сабақ</span><div class="bar"><i id="progBar"></i></div></div></div>
+      <div id="modules"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="awards">
+    <div class="wrap">
+      <div class="sec-head"><span class="kicker">Портфолио</span><h2>Жетістіктер мен марапаттар</h2><p>Ұстаздың марапаттары, біліктілік арттыру курстары және жетекшілік еткен оқушылардың олимпиадалар мен байқаулардағы табыстары.</p></div>
+      <div class="tabs" id="awTabs"><button class="on" data-f="all">Барлығы</button><button data-f="t">Мұғалім марапаттары</button><button data-f="c">Біліктілік арттыру</button><button data-f="s">Оқушылар жетістіктері</button><button data-f="v">Бейнелер</button></div>
+      <div class="gallery" id="gallery"></div>
+    </div>
+  </section>
+
+  <section class="sec alt" id="author">
+    <div class="wrap author">
+      <img src="img/teacher.jpg" alt="Турлашева Алина Маратовна">
+      <div>
+        <span class="kicker">Бағдарлама авторы</span>
+        <h2>Турлашева Алина Маратовна</h2>
+        <p class="lead">Биология пәнінің мұғалімі. «Оқушы — тұлға. Ұстаздың міндеті — оның ізденімпаздығын, шығармашылығын оятып, өз әлеуетін толық ашуына жағдай жасау».</p>
+        <div class="facts">
+          <div><span>Еңбек өтілі</span><b>13 жыл</b></div>
+          <div><span>Санаты</span><b>Педагог-зерттеуші</b></div>
+          <div><span>Білімі</span><b>Абай атындағы ҚазҰПУ</b></div>
+          <div><span>Жұмыс орны</span><b>№169 мектеп-лицей, Алатау ауданы, Алматы</b></div>
+          <div><span>Біліктілік</span><b>NXplorers тренері · NIS (80 сағ.) · БМДИ (80 сағ.)</b></div>
+          <div><span>Марапаттар</span><b>Аудан әкімінің Құрмет грамотасы, Мадақтама грамота</b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="foot"><div class="wrap">© 2026 · «Жасушаның құпия әлемі» авторлық элективті курсы · А.М. Турлашева · №169 мектеп-лицей, Алматы</div></footer>
+</main>
+
+<main id="lessonView" hidden></main>
+
+<div class="lightbox" id="lightbox" hidden><button class="lb-x" aria-label="Жабу">×</button><button class="lb-p" aria-label="Алдыңғы">‹</button><figure><img alt=""><video controls playsinline preload="metadata" hidden></video><figcaption></figcaption></figure><button class="lb-n" aria-label="Келесі">›</button></div>
+
+<script src="engine.js"></script>
+<script src="scenes.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
